@@ -1,4 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StudGrad Community Platform
+
+Welcome to the **StudGrad** community website repository! StudGrad is a dedicated, fully responsive platform designed to bridge the gap between academic life and professional success. We connect students and recent graduates with mentors, opportunities, and a thriving community across tech, health, business, creative industries, law, and engineering.
+
+## What it Does
+
+This website serves as the digital home for the StudGrad community, built to convert visitors into active community members through a high-impact, image-heavy, and dynamic user interface.
+
+**Key Features:**
+- **Dynamic Single-Page Architecture:** A modern, scrolling experience with Intersection Observer animations.
+- **Mobile-First Design:** Fully responsive layout that ensures perfect viewing on smartphones, tablets, and desktops.
+- **Interactive FAQ Accordion:** Clean, animated dropdowns for commonly asked questions.
+- **Comprehensive Join Flow:** A multi-step questionnaire designed to capture member intent (student vs graduate, field of interest, motivations).
+- **Embedded Blog:** A dedicated layout to feature insights, career advice, and success stories.
+- **Sleek Branding:** Custom typography (DM Serif Display, DM Sans) and a bespoke color palette (Deep Navy, Amber Gold, Teal, Cream).
+
+## Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Styling:** Custom Vanilla CSS (`globals.css`) strictly following a mobile-first paradigm (No external UI libraries or Tailwind, for complete aesthetic control).
+- **Deployment:** Ready for seamless integration and hosting on [Vercel](https://vercel.com).
 
 ## Getting Started
 
@@ -16,21 +36,9 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+- `src/app/page.tsx`: The primary, single-page landing experience.
+- `src/app/join/page.tsx`: The interactive onboarding questionnaire.
+- `src/app/blog/page.tsx`: Community articles and news.
+- `src/app/faq`, `/terms`, `/support`, `/privacy`: Additional static policy and support pages.
+- `src/app/globals.css`: The central source of truth for the entire design system and responsive layout logic.
